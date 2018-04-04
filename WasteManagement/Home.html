@@ -15,6 +15,7 @@
             this.tmpl = function tmpl(str, data) {
                 // Figure out if we're getting a template, or if we need to
                 // load the template - and be sure to cache the result.
+          
                 var fn = !/\W/.test(str) ?
                   cache[str] = cache[str] ||
                     tmpl(document.getElementById(str).innerHTML) :
@@ -58,8 +59,13 @@
         var route = routes[url];
         // Do we have both a view and a route?
         if (el && route.controller) {
-          // Render route template with John Resig's template engine:
-            el.innerHTML = tmpl(route.templateId, new route.controller());
+            // Render route template with John Resig's template engine:
+            var template = '';
+            $.get($('#' + route.templateId).attr('src'), function (template) {
+                
+                el.innerHTML = tmpl(template, new route.controller());
+            });
+            
         }
     }
     // Listen on hash change:
@@ -70,13 +76,14 @@
     <script type="text/html" id="home">
         <h1>Router FTW!</h1>
     </script>
-    <script type="text/html" id="template1">
-        <h1>Page 1: <%= greeting %></h1>
-        <p><%= moreText %></p>
+    <script type="text/html" id="route" src="route.html">
+        
     </script>
-    <script type="text/html" id="template2">
-        <h1>Page 2: <%= heading %></h1>
-        <p>Lorem ipsum...</p>
+    <script type="text/html" id="deployment" src="deployment.html">
+    </script>
+    <script type="text/html" id="vehicle" src="vehicle.html">
+    </script>
+    <script type="text/html" id="person" src="person.html">
     </script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
@@ -133,50 +140,63 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#/Deployments">Deployments</a></li>
-                    <li><a href="#/Administration">Administration</a></li>
                     <li><a href="#/Contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Administration <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/vehicle">Vehicle</a></li>
+                            <li><a href="#/person">Person</a></li>
+                            <li><a href="#/compactor.html">Compactor</a></li>
+                            <li><a href="#/route">Route</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Welcome </a></li>
                 </ul>
             </div>
-            <div id="view"></div>
+            <!--<div id="view"></div>-->
         </div>
     </nav>
 
     <div class="container-fluid text-center">
         <div class="row content">
-            <div class="col-sm-2 sidenav">
+            <!--<div class="col-sm-2 sidenav">
                 <p><a href="#">Link</a></p>
                 <p><a href="#">Link</a></p>
                 <p><a href="#">Link</a></p>
+            </div>-->
+            <div class="col-sm-8 text-left" id="view">
+              
             </div>
-            <div class="col-sm-8 text-left">
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <hr>
-                <h3>Test</h3>
-                <p>Lorem ipsum...</p>
-            </div>
-            <div class="col-sm-2 sidenav">
+            <!--<div class="col-sm-2 sidenav">
                 <div class="well">
                     <p>ADS</p>
                 </div>
                 <div class="well">
                     <p>ADS</p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <script>
     route('/', 'home', function () {});
-    route('/Deployments', 'template1', function () {
+    route('/Deployments', 'deployment', function () {
       this.greeting = 'Hello world!';
         this.moreText = 'Bacon ipsum...';
     });
-    route('/Administration', 'template2', function () {
+    route('/person', 'person', function () {
       this.heading = 'I\'m page two!';
     });
+
+    route('/vehicle', 'vehicle', function () {
+        
+    });
+    route('/route', 'route', function () {
+
+    });
+
+
     </script>
     <footer class="container-fluid text-center">
         <p>Footer Text</p>
