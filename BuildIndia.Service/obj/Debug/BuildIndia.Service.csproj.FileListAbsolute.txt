@@ -1,0 +1,29 @@
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Service.dll
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Service.pdb
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.dll
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.pdb
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.csprojResolveAssemblyReference.cache
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.dll
+C:\Users\diksha.verma\Downloads\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.pdb
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Service.dll
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Service.pdb
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.dll
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.pdb
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.csprojResolveAssemblyReference.cache
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.dll
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\obj\Debug\BuildIndia.Service.pdb
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Data.dll
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\EntityFramework.dll
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\BuildIndia.Data.pdb
+D:\NASSCOM\nasscomrepository2-master\nasscomrepository2-master\BuildIndia.Service\bin\Debug\EntityFramework.xml
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.Service.dll
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.Service.pdb
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.Data.dll
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.dll
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\EntityFramework.dll
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.Data.pdb
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\BuildIndia.ViewModel.pdb
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\bin\Debug\EntityFramework.xml
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\obj\Debug\BuildIndia.Service.csprojResolveAssemblyReference.cache
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\obj\Debug\BuildIndia.Service.dll
+C:\Users\saurabh.vats\Documents\Visual Studio 2015\Projects\DummyWebApi\BuildIndia.Service\obj\Debug\BuildIndia.Service.pdb
