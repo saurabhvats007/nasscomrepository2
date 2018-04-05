@@ -100,6 +100,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BuildIndia.Service\BuildIndia.Service.csproj">
+      <Project>{0F80245B-77F0-45BE-A6A8-B446F475A81E}</Project>
+      <Name>BuildIndia.Service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BuildIndia.ViewModel\BuildIndia.ViewModel.csproj">
       <Project>{F72783D2-49CD-4F48-AAE1-CA59080F2051}</Project>
       <Name>BuildIndia.ViewModel</Name>

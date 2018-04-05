@@ -10,7 +10,8 @@ namespace BuildIndia.ViewModel
     {
         public string VehicleNumber { get; set; }
         public string RegistrationYear { get; set; }
-        public string ServiceProvider { get; set; }
         public string VehicleDetails { get; set; }
+        public string ServiceProvider { get; set; }
     }
+
 }
