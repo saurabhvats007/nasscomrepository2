@@ -1,6 +1,7 @@
 ﻿using Microsoft.Owin.Hosting;
 using Owin;
 using System;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 using Topshelf;
 
@@ -17,6 +18,10 @@ namespace DummyWebApi
         private HttpConfiguration ConfigureApi()
         {
             var config = new HttpConfiguration();
+            config.Formatters.Clear();
+            config.Formatters.Add(new JsonMediaTypeFormatter());
+            config.Formatters.Add(new XmlMediaTypeFormatter());
+            config.EnableCors();
             config.Routes.MapHttpRoute(
                 "DefaultApi",
                 "api/{controller}/{id}",

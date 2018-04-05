@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyWebApi", "DummyWebApi\DummyWebApi.csproj", "{3B08475B-448B-4C68-864E-C630BD2C0975}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F72783D2-49CD-4F48-AAE1-CA59080F2051} = {F72783D2-49CD-4F48-AAE1-CA59080F2051}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteManagement", "WasteManagement\WasteManagement.csproj", "{0ADB2461-AF99-470D-A2AF-52825436EFBF}"
 EndProject
